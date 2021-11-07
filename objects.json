@@ -1,0 +1,40 @@
+{
+	"npcs": [
+		{
+			"index": 0,
+			"firstname": "Bron",
+            "secondname": "Strongdong",
+            "race": "Dwarf",
+            "Trait": "Loud" 
+		},
+		{
+			"index": 1,
+			"firstname": "Barry",
+            "secondname": "Smitherton",
+            "race": "Human",
+            "Trait": "Shy" 
+		},
+		{
+			"index": 2,
+			"firstname": "Erathar",
+            "secondname": "Cerebrim",
+            "race": "Elf",
+            "Trait": "Rude" 
+		},
+		{
+			"index": 3,
+			"firstname": "Benbin",
+            "secondname": "Quietfoot",
+            "race": "Halfling",
+            "Trait": "Nervous" 
+		},
+		{
+			"index": 4,
+			"firstname": "Daisy",
+            "secondname": "Littlecurl",
+            "race": "Gnome",
+            "Trait": "Clumsy" 
+		}
+		
+	]
+}
