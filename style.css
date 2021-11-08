@@ -19,6 +19,37 @@ body {
   justify-content: space-between;
 }
 
+.drop-btn {
+  margin-bottom: 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  width: 100%;
+  margin: 2px;
+}
+
+.npc-dropdown {
+  width: 100%;
+}
+
+.npc-dropdown select {
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
 .btn {
   margin-bottom: 0;
   padding: 1rem;
@@ -38,15 +69,17 @@ body {
   cursor: pointer;
 }
 
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 1rem;
+.race-btns {
+  margin: 1rem 0;
+  display: none;
 }
 
-.card {
-  border-radius: 10px;
+.active {
+  display: block;
+}
+
+.small-btns {
+  display: flex;
 }
 
 .card-container {
@@ -56,10 +89,7 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   width: 50%;
 }
-.race-btns {
-  margin: 1rem;
-}
 
-.small-btns {
-  display: flex;
+.card {
+  border-radius: 10px;
 }

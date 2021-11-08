@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <title>NPC Generator</title>
   </head>
   <body>
@@ -14,7 +15,16 @@
 
     <div class="container">
       <div class="button-container">
-        <div class="race-btns">
+        <div class="npc-dropdown">
+          <select name="race-select" id="race-select" class="race-select">
+            <option value="0">Random NPC</option>
+            <option value="1">Dwarves</option>
+            <option value="2">Dragonborn</option>
+            <option value="3">Human</option>
+          </select>
+        </div>
+
+        <div class="race-btns active" id="random">
           <button class="btn-large new-npc-btn" id="new-npc-btn">Generate Random NPC</button>
           <div class="small-btns">
             <button class="btn new-npc-btn" id="new-npc-btn">Generate Random NPC (M)</button>
@@ -39,18 +49,32 @@
             <button class="btn new-dragonborn-female" id="new-dragonborn-female">Generate Random Dragonborn (F)</button>
           </div>
         </div>
+
+        <div class="race-btns" id="human-btns">
+            <button class="btn-large new-human" id="new-human">Generate Random Human</button>
+    
+            <div class="small-btns">
+              <button class="btn new-human-male" id="new-human-male">Generate Random Human (M)</button>
+              <button class="btn new-human-female" id="new-human-female">Generate Random Human (F)</button>
+            </div>
+          </div>
       </div>
 
       <div class="card-container" id="card-container">
-        <!-- <div class="card">
-                <h4>Name: <span id="random-npc-name">Bron Strongdong</span></h4>
-                <h4>Race: <span id="random-npc-race">dragonborn</span></h4>
-                <h4>Trait: <span id="random-npc-trait">Loud voice</span></h4>
-            </div> -->
+        <div class="card">
+                <h4>Name: <span id="random-npc-name"></span></h4>
+                <h4>Race: <span id="random-npc-race"></span></h4>
+                <h4>Trait: <span id="random-npc-trait"></span></h4>
+            </div>
       </div>
+    </div>
+
+      
     </div>
 
     <script src="js/buttons.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    
   </body>
 </html>
