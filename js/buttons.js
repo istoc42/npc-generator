@@ -7,6 +7,9 @@ const newDwarfFemale = document.getElementById('new-dwarf-female')
 const newDragonborn = document.getElementById('new-dragonborn')
 const newDragonbornFemale = document.getElementById('new-dragonborn-female')
 const newDragonbornMale = document.getElementById('new-dragonborn-male')
+const newTiefling = document.getElementById('new-tiefling')
+const newTieflingFemale = document.getElementById('new-tiefling-female')
+const newTieflingMale = document.getElementById('new-tiefling-male')
 
 // When button is clicked, generate a card with three random values
 randomNpcBtn.addEventListener('click', () => {
@@ -189,6 +192,85 @@ function createDragonbornFemale() {
            <div class="card">
               <h4>Name: ${dragonbornName} ${clan}</h4>
               <h4>Race: ${color} Dragonborn</h4>
+              <h4>Trait: ${trait}</h4>
+           </div>
+       `
+}
+
+// --------------------------------------------------------------------------------------
+
+// Tieflings
+
+// Tiefling All
+
+newTiefling.addEventListener('click', () => {
+  console.log('Button clicked')
+  createTiefling()
+})
+
+function createTiefling() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let virtue = shuffle(tieflingVirtue)
+  let tieflingName = shuffle(tieflingNamesAll)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name: ${tieflingName} ${virtue}</h4>
+              <h4>Race: Tiefling</h4>
+              <h4>Trait: ${trait}</h4>
+           </div>
+       `
+}
+
+// Tiefling Female
+
+newTieflingFemale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createTieflingFemale()
+})
+
+function createTieflingFemale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let virtue = shuffle(tieflingVirtue)
+  let tieflingName = shuffle(tieflingNamesFemale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name: ${tieflingName} ${virtue}</h4>
+              <h4>Race: Tiefling</h4>
+              <h4>Trait: ${trait}</h4>
+           </div>
+       `
+}
+
+// Tiefling Male
+
+newTieflingMale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createTieflingMale()
+})
+
+function createTieflingMale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let virtue = shuffle(tieflingVirtue)
+  let tieflingName = shuffle(tieflingNamesMale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name: ${tieflingName} ${virtue}</h4>
+              <h4>Race: Tiefling</h4>
               <h4>Trait: ${trait}</h4>
            </div>
        `
