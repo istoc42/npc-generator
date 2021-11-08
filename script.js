@@ -107,26 +107,46 @@ randomNpcBtn.addEventListener('click', () => {
 
 // Function to create card
 function createRandomNpc() {
-  // Generate random numbers
-  let r = Math.floor(Math.random() * npcs.length)
-  console.log('NPC number ' + r + ' was chosen')
+  //   let r = Math.floor(Math.random() * npcs.length)
+  //   console.log('NPC number ' + r + ' was chosen')
 
-  let t = Math.floor(Math.random() * npcTraits.length)
-  console.log('Trait: ' + npcTraits[t])
+  //   let t = Math.floor(Math.random() * npcTraits.length)
+  //   console.log('Trait: ' + npcTraits[t])
+
+  // Generate random numbers
+  console.log(shuffle(npcTraits))
 
   // Clear card container div
   cardContainer.innerHTML = ''
 
-  let npc = npcs[r]
+  let npc = shuffle(npcs)
 
-  let trait = npcTraits[t]
+  let trait = shuffle(npcTraits)
 
-  // Insert new card div
+  //  Insert new card div
   cardContainer.innerHTML = `
-        <div class="card">
-            <h4>Name: ${npc.firstname} ${npc.secondname}</h4>
-            <h4>Race: ${npc.race}</h4>
-            <h4>Trait: ${trait}</h4>
-        </div>
-    `
+           <div class="card">
+               <h4>Name: ${npc.firstname} ${npc.secondname}</h4>
+              <h4>Race: ${npc.race}</h4>
+              <h4>Trait: ${trait}</h4>
+           </div>
+       `
+}
+
+// Function to pick random non-repeating value from array
+function shuffle(x) {
+  var i = x.length,
+    j = 0,
+    temp
+
+  while (i--) {
+    j = Math.floor(Math.random() * (i + 1))
+
+    // swap randomly chosen element with current element
+    temp = x[i]
+    x[i] = x[j]
+    x[j] = temp
+  }
+
+  return temp
 }
