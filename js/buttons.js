@@ -4,6 +4,9 @@ const cardContainer = document.getElementById('card-container')
 const newDwarf = document.getElementById('new-dwarf')
 const newDwarfMale = document.getElementById('new-dwarf-male')
 const newDwarfFemale = document.getElementById('new-dwarf-female')
+const newDragonborn = document.getElementById('new-dragonborn')
+const newDragonbornFemale = document.getElementById('new-dragonborn-female')
+const newDragonbornMale = document.getElementById('new-dragonborn-male')
 
 // When button is clicked, generate a card with three random values
 randomNpcBtn.addEventListener('click', () => {
@@ -37,7 +40,10 @@ function createRandomNpc() {
            </div>
        `
 }
-// Dwarves All
+
+// Dwarf buttons --------------------------------------------------------------------
+
+// Dwarves all
 newDwarf.addEventListener('click', () => {
   console.log('Button clicked')
   createDwarf()
@@ -91,7 +97,6 @@ newDwarfFemale.addEventListener('click', () => {
   createDwarfFemale()
 })
 
-// Function to create card
 function createDwarfFemale() {
   // Clear card container div
   cardContainer.innerHTML = ''
@@ -105,6 +110,85 @@ function createDwarfFemale() {
            <div class="card">
               <h4>Name: ${dwarfName} ${clan}</h4>
               <h4>Race: Dwarf</h4>
+              <h4>Trait: ${trait}</h4>
+           </div>
+       `
+}
+
+// Dragonborn buttons ------------------------------------------------------------
+
+// Dragonborn all
+newDragonborn.addEventListener('click', () => {
+  console.log('Button clicked')
+  createDragonborn()
+})
+
+function createDragonborn() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let clan = shuffle(dragonbornClan)
+  let dragonbornName = shuffle(dragonbornNamesAll)
+  let color = shuffle(dragonbornColor)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name: ${dragonbornName} ${clan}</h4>
+              <h4>Race: ${color} Dragonborn</h4>
+              <h4>Trait: ${trait}</h4>
+           </div>
+       `
+}
+
+// Dragonborn Male
+
+newDragonbornMale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createDragonbornMale()
+})
+
+function createDragonbornMale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let clan = shuffle(dragonbornClan)
+  let dragonbornName = shuffle(dragonbornNamesMale)
+  let color = shuffle(dragonbornColor)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name: ${dragonbornName} ${clan}</h4>
+              <h4>Race: ${color} Dragonborn</h4>
+              <h4>Trait: ${trait}</h4>
+           </div>
+       `
+}
+
+// Dragonborn Female
+
+newDragonbornFemale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createDragonbornFemale()
+})
+
+function createDragonbornFemale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let clan = shuffle(dragonbornClan)
+  let dragonbornName = shuffle(dragonbornNamesFemale)
+  let color = shuffle(dragonbornColor)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name: ${dragonbornName} ${clan}</h4>
+              <h4>Race: ${color} Dragonborn</h4>
               <h4>Trait: ${trait}</h4>
            </div>
        `
