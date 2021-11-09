@@ -2,3 +2,6 @@ Features to add:
 
 - Re-roll values
 - Have value fields always visible
+- Add a background
+- Add a footer
+- Sub races for each race
