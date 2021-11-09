@@ -710,6 +710,67 @@ const gnomeClan = [
 
 const gnomeNamesAll = gnomeNamesMale.concat(gnomeNamesFemale)
 
+// Halflings ---------------------------------------------------------------------------------------------
+
+const halflingNamesMale = ['Alton', 'Ander', 'Bernie', 'Bobbin', 'Cade', 'Callus', 'Corrin', 'Dannad', 'Danniel', 'Eddie', 'Egart', 'Eldon', 'Errich', 'Fildo', 'Finnan', 'Franklin', 'Garret', 'Garth', 'Gilbert', 'Gob', 'Harol', 'Igor', 'Jasper', 'Keith', 'Kevin', 'Lazam', 'Lerry', 'Lindal', 'Lyle', 'Merric', 'Mican', 'Milo', 'Morrin', 'Nebin', 'Nevil', 'Osborn', 'Ostran', 'Oswalt', 'Perrin', 'Poppy', 'Reed', 'Roscoe', 'Sam', 'Shardon', 'Tye', 'Ulmo', 'Wellby', 'Wendel', 'Wenner', 'Wes']
+
+const halflingNamesFemale = ['Alain', 'Andry', 'Anne', 'Bella', 'Blossom', 'Bree', 'Callie', 'Chenna', 'Cora', 'Dee', 'Dell', 'Eida', 'Eran', 'Euphemia', 'Georgina', 'Gynnie', 'Harriet', 'Jasmine', 'Jillian', 'Jo', 'Kithri', 'Lavinia', 'Lidda', 'Maegan', 'Marigold', 'Merla', 'Myria', 'Nedda', 'Nikki', 'Nora', 'Olivia', 'Paela', 'Pearl', 'Pennie', 'Philomena', 'Portia', 'Robbie', 'Rose', 'Saral', 'Seraphina', 'Shaena', 'Stacee', 'Tawna', 'Thea', 'Trym', 'Tyna', 'Vani', 'Verna', 'Wella', 'Willow']
+
+const halflingClan = [
+  'Appleblossom',
+  'Bigheart',
+  'Brightmoon',
+  'Brushgather',
+  'Cherrycheeks',
+  'Copperkettle',
+  'Deephollow',
+  'Elderberry',
+  'Fastfoot',
+  'Fatrabbit',
+  'Glenfellow',
+  'Goldfound',
+  'Goodbarrel',
+  'Goodearth',
+  'Greenbottle',
+  'Greenleaf',
+  'High-hill',
+  'Hilltopple',
+  'Hogcollar',
+  'Honeypot',
+  'Jamjar',
+  'Kettlewhistle',
+  'Leagallow',
+  'Littlefoot',
+  'Nimblefingers',
+  'Porridgepot',
+  'Quickstep',
+  'Reedfellow',
+  'Shadowquick',
+  'Silvereyes',
+  'Smoothhands',
+  'Stonebridge',
+  'Stoutbridge',
+  'Stoutman',
+  'Strongbones',
+  'Sunmeadow',
+  'Swiftwhistle',
+  'Tallfellow',
+  'Tealeaf',
+  'Tenpenny',
+  'Thistletop',
+  'Thorngage',
+  'Tosscobble',
+  'Underbough',
+  'Underfoot',
+  'Warmwater',
+  'Whispermouse',
+  'Wildcloak',
+  'Wildheart',
+  'Wiseacre',
+]
+
+const halflingNamesAll = halflingNamesMale.concat(halflingNamesFemale)
+
 // Half-orcs ---------------------------------------------------------------------------------------------
 
 const halforcNamesMale = ['Argran', 'Braak', 'Brug', 'Cagak', 'Dench', 'Dorn', 'Dren', 'Druuk', 'Feng', 'Gell', 'Gnarsh', 'Grumbar', 'Gubrash', 'Hagren', 'Henk', 'Hogar', 'Holg', 'Imsh', 'Karash', 'Karg', 'Keth', 'Korag', 'Krusk', 'Lubash', 'Megged', 'Mhurren', 'Mord', 'Morg', 'Nil', 'Nybarg', 'Odorr', 'Ohr', 'Rendar', 'Resh', 'Ront', 'Rrath', 'Sark', 'Scrag', 'Sheggen', 'Shump', 'Tanglar', 'Tarak', 'Thar', 'Thokk', 'Trag', 'Ugarth', 'Varg', 'Vilberg', 'Yurk', 'Zed']
@@ -2493,6 +2554,6 @@ const tieflingNamesAll = tieflingNamesMale.concat(tieflingNamesFemale)
 
 // Concat arrays for random buttons ---------------------------------------------------------------------
 
-const randomArr = [createDragonborn, createDwarf, createElf, createHalfOrc, createHuman, createTiefling]
-const randomArrMale = [createDragonbornMale, createDwarfMale, createElfMale, createHalfOrcMale, createHumanMale, createTieflingMale]
-const randomArrFemale = [createDragonbornFemale, createDwarfFemale, createElfFemale, createHalfOrcFemale, createHumanFemale, createTieflingFemale]
+const randomArr = [createDragonborn, createDwarf, createElf, createHalfling, createHalfOrc, createHuman, createTiefling]
+const randomArrMale = [createDragonbornMale, createDwarfMale, createElfMale, createHalflingMale, createHalfOrcMale, createHumanMale, createTieflingMale]
+const randomArrFemale = [createDragonbornFemale, createDwarfFemale, createElfFemale, createHalflingFemale, createHalfOrcFemale, createHumanFemale, createTieflingFemale]

@@ -339,6 +339,83 @@ function createGnomeFemale() {
        `
 }
 
+// Halfling buttons --------------------------------------------------------------------
+
+const newHalfling = document.getElementById('new-halfling')
+const newHalflingMale = document.getElementById('new-halfling-male')
+const newHalflingFemale = document.getElementById('new-halfling-female')
+
+// Halflings all
+newHalfling.addEventListener('click', () => {
+  createHalfling()
+})
+
+function createHalfling() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let clan = shuffle(halflingClan)
+  let halflingName = shuffle(halflingNamesAll)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name:<span> ${halflingName} ${clan}</span></h4>
+              <h4>Race:<span> Halfling</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
+           </div>
+       `
+}
+
+// Halfling Male
+newHalflingMale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createHalflingMale()
+})
+
+function createHalflingMale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let clan = shuffle(halflingClan)
+  let halflingName = shuffle(halflingNamesMale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name:<span> ${halflingName} ${clan}</span></h4>
+              <h4>Race:<span> Halfling</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
+           </div>
+       `
+}
+
+// Halfling Female
+newHalflingFemale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createHalflingFemale()
+})
+
+function createHalflingFemale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let clan = shuffle(halflingClan)
+  let halflingName = shuffle(halflingNamesFemale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name:<span> ${halflingName} ${clan}</span></h4>
+              <h4>Race:<span> Halfling</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
+           </div>
+       `
+}
+
 // Half-Orc buttons --------------------------------------------------------------------
 
 const newHalfOrc = document.getElementById('new-halforc')
