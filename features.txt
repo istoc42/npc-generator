@@ -1,5 +1,4 @@
 Features to add:
 
 - Re-roll values
-- Dropdown to only show active race in dropdown menu
 - Have value fields always visible

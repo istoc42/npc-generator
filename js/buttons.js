@@ -1,15 +1,6 @@
 // Bring in elements from DOM
 const randomNpcBtn = document.getElementById('new-npc-btn')
 const cardContainer = document.getElementById('card-container')
-const newDwarf = document.getElementById('new-dwarf')
-const newDwarfMale = document.getElementById('new-dwarf-male')
-const newDwarfFemale = document.getElementById('new-dwarf-female')
-const newDragonborn = document.getElementById('new-dragonborn')
-const newDragonbornFemale = document.getElementById('new-dragonborn-female')
-const newDragonbornMale = document.getElementById('new-dragonborn-male')
-const newTiefling = document.getElementById('new-tiefling')
-const newTieflingFemale = document.getElementById('new-tiefling-female')
-const newTieflingMale = document.getElementById('new-tiefling-male')
 
 // When button is clicked, generate a card with three random values
 randomNpcBtn.addEventListener('click', () => {
@@ -45,6 +36,10 @@ function createRandomNpc() {
 }
 
 // Dwarf buttons --------------------------------------------------------------------
+
+const newDwarf = document.getElementById('new-dwarf')
+const newDwarfMale = document.getElementById('new-dwarf-male')
+const newDwarfFemale = document.getElementById('new-dwarf-female')
 
 // Dwarves all
 newDwarf.addEventListener('click', () => {
@@ -119,6 +114,10 @@ function createDwarfFemale() {
 }
 
 // Dragonborn buttons ------------------------------------------------------------
+
+const newDragonborn = document.getElementById('new-dragonborn')
+const newDragonbornFemale = document.getElementById('new-dragonborn-female')
+const newDragonbornMale = document.getElementById('new-dragonborn-male')
 
 // Dragonborn all
 newDragonborn.addEventListener('click', () => {
@@ -197,9 +196,173 @@ function createDragonbornFemale() {
        `
 }
 
-// --------------------------------------------------------------------------------------
+// Elf -------------------------------------------------------------------------------
 
-// Tieflings
+const newElf = document.getElementById('new-elf')
+const newElfMale = document.getElementById('new-elf-male')
+const newElfFemale = document.getElementById('new-elf-female')
+
+// Elf all
+
+newElf.addEventListener('click', () => {
+  console.log('Button clicked')
+  createElf()
+})
+
+function createElf() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let lastName = shuffle(elfClan)
+  let firstName = shuffle(elfNamesAll)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name: ${firstName} ${lastName}</h4>
+              <h4>Race: Elf</h4>
+              <h4>Trait: ${trait}</h4>
+           </div>
+       `
+}
+
+// Elf Female
+
+newElfFemale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createElfFemale()
+})
+
+function createElfFemale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let lastName = shuffle(elfClan)
+  let firstName = shuffle(elfNamesFemale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+  <div class="card">
+    <h4>Name: ${firstName} ${lastName}</h4>
+    <h4>Race: Elf</h4>
+    <h4>Trait: ${trait}</h4>
+  </div>
+`
+}
+
+// Elf Male
+
+newElfMale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createElfMale()
+})
+
+function createElfMale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let lastName = shuffle(elfNamesAll)
+  let firstName = shuffle(elfNamesMale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+  <div class="card">
+  <h4>Name: ${firstName} ${lastName}</h4>
+  <h4>Race: Elf</h4>
+  <h4>Trait: ${trait}</h4>
+</div>
+`
+}
+
+// Humans -------------------------------------------------------------------------------
+
+const newHuman = document.getElementById('new-human')
+const newHumanMale = document.getElementById('new-human-male')
+const newHumanFemale = document.getElementById('new-human-female')
+
+// Human all
+
+newHuman.addEventListener('click', () => {
+  console.log('Button clicked')
+  createHuman()
+})
+
+function createHuman() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let lastName = shuffle(humanNamesAll)
+  let firstName = shuffle(humanNamesAll)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name: ${firstName} ${lastName}</h4>
+              <h4>Race: Human</h4>
+              <h4>Trait: ${trait}</h4>
+           </div>
+       `
+}
+
+// Human Female
+
+newHumanFemale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createHumanFemale()
+})
+
+function createHumanFemale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let lastName = shuffle(humanNamesAll)
+  let firstName = shuffle(humanNamesFemale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+  <div class="card">
+    <h4>Name: ${firstName} ${lastName}</h4>
+    <h4>Race: Human</h4>
+    <h4>Trait: ${trait}</h4>
+  </div>
+`
+}
+
+// Human Male
+
+newHumanMale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createHumanMale()
+})
+
+function createHumanMale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let lastName = shuffle(humanNamesAll)
+  let firstName = shuffle(humanNamesMale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+  <div class="card">
+  <h4>Name: ${firstName} ${lastName}</h4>
+  <h4>Race: Human</h4>
+  <h4>Trait: ${trait}</h4>
+</div>
+`
+}
+
+// Tieflings -----------------------------------------------------------------------
+
+const newTiefling = document.getElementById('new-tiefling')
+const newTieflingFemale = document.getElementById('new-tiefling-female')
+const newTieflingMale = document.getElementById('new-tiefling-male')
 
 // Tiefling All
 
