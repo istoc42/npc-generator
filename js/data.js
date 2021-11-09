@@ -1,41 +1,3 @@
-const npcs = [
-  {
-    index: 0,
-    firstname: 'Bron',
-    secondname: 'Strongdong',
-    race: 'Dwarf',
-    trait: 'Loud',
-  },
-  {
-    index: 1,
-    firstname: 'Barry',
-    secondname: 'Smitherton',
-    race: 'Human',
-    trait: 'Shy',
-  },
-  {
-    index: 2,
-    firstname: 'Erathar',
-    secondname: 'Cerebrim',
-    race: 'Elf',
-    trait: 'Rude',
-  },
-  {
-    index: 3,
-    firstname: 'Benbin',
-    secondname: 'Quietfoot',
-    race: 'Halfling',
-    trait: 'Nervous',
-  },
-  {
-    index: 4,
-    firstname: 'Daisy',
-    secondname: 'Littlecurl',
-    race: 'Gnome',
-    trait: 'Clumsy',
-  },
-]
-
 const npcTraits = [
   'Loud',
   'Shy',
@@ -93,6 +55,8 @@ const npcTraits = [
   'Jealous',
   'Lonely',
 ]
+
+// Dwarves ---------------------------------------------------------------------------------------------
 
 const dwarfNamesMale = [
   'Adrik',
@@ -254,6 +218,8 @@ const dwarfClan = [
   'Trueblood',
   'Ungart',
 ]
+
+// Dragonborn ---------------------------------------------------------------------------------------------
 
 const dragonbornNamesFemale = [
   'Akra',
@@ -418,6 +384,8 @@ const dragonbornClan = [
 
 const dragonbornColor = ['Black', 'Blue', 'Brass', 'Bronze', 'Copper', 'Gold', 'Green', 'Red', 'Silver', 'White']
 
+// Elves ---------------------------------------------------------------------------------------------
+
 const elfNamesMale = [
   'Adran',
   'Aelar',
@@ -578,6 +546,171 @@ const elfClan = [
   'Xistsrith',
   'Yaeldrin',
 ]
+
+// Gnomes ---------------------------------------------------------------------------------------------
+
+const gnomeNamesMale = [
+  'Alston',
+  'Alvyn',
+  'Anverth',
+  'Arumawann',
+  'Bilbron',
+  'Boddynock',
+  'Brocc',
+  'Burgell',
+  'Cockaby',
+  'Crampernap',
+  'Dabbledob',
+  'Delebean',
+  'Dimble',
+  'Eberdeb',
+  'Eldon',
+  'Erky',
+  'Fablen',
+  'Fibblestib',
+  'Fonkin',
+  'Frouse',
+  'Frug',
+  'Gerbo',
+  'Gimble',
+  'Glim',
+  'Igden',
+  'Jabble',
+  'Jebeddo',
+  'Kellen',
+  'Kipper',
+  'Namfoodle',
+  'Oppleby',
+  'Orryn',
+  'Paggen',
+  'Pallabar',
+  'Pog',
+  'Qualen',
+  'Ribbles',
+  'Rimple',
+  'Roondar',
+  'Sapply',
+  'Seebo',
+  'Senteq',
+  'Sindri',
+  'Umpen',
+  'Warryn',
+  'Wiggens',
+  'Wobbles',
+  'Wrenn',
+  'Zaffrab',
+  'Zook',
+]
+
+const gnomeNamesFemale = [
+  'Abalaba',
+  'Bimpnottin',
+  'Breena',
+  'Buvvie',
+  'Callybon',
+  'Caramip',
+  'Carlin',
+  'Cumpen',
+  'Dalaba',
+  'Donella',
+  'Duvamil',
+  'Ella',
+  'Ellyjoybell',
+  'Ellywick',
+  'Enidda',
+  'Lilli',
+  'Loopmottin',
+  'Lorilla',
+  'Luthra',
+  'Mardnab',
+  'Meena',
+  'Menny',
+  'Mumpena',
+  'Nissa',
+  'Numba',
+  'Nyx',
+  'Oda',
+  'Oppah',
+  'Orla',
+  'Panana',
+  'Pyntle',
+  'Quilla',
+  'Ranala',
+  'Reddlepop',
+  'Roywyn',
+  'Salanop',
+  'Shamil',
+  'Siffress',
+  'Symma',
+  'Tana',
+  'Tenena',
+  'Tervaround',
+  'Tippletoe',
+  'Ulla',
+  'Unvera',
+  'Veloptima',
+  'Virra',
+  'Waywocket',
+  'Yebe',
+  'Zanna',
+]
+
+const gnomeClan = [
+  'Albaratie',
+  'Bafflestone',
+  'Beren',
+  'Boondiggles',
+  'Cobblelob',
+  'Daergel',
+  'Dunben',
+  'Fabblestabble',
+  'Fapplestamp',
+  'Fiddlefen',
+  'Folkor',
+  'Garrick',
+  'Gimlen',
+  'Glittergem',
+  'Gobblefirn',
+  'Gummen',
+  'Horcusporcus',
+  'Humplebumple',
+  'Ironhide',
+  'Leffery',
+  'Lingenhall',
+  'Loofollue',
+  'Maekkelferce',
+  'Miggledy',
+  'Munggen',
+  'Murnig',
+  'Musgraben',
+  'Nackle',
+  'Ningel',
+  'Nopenstallen',
+  'Nucklestamp',
+  'Offund',
+  'Oomtrowl',
+  'Pilwicken',
+  'Pingun',
+  'Quillsharpener',
+  'Raulnor',
+  'Reese',
+  'Rofferton',
+  'Scheppen',
+  'Shadowcloak',
+  'Silverthread',
+  'Sympony',
+  'Tarkelby',
+  'Timbers',
+  'Turen',
+  'Umbodoben',
+  'Waggletop',
+  'Welber',
+  'Wildwander',
+]
+
+const gnomeNamesAll = gnomeNamesMale.concat(gnomeNamesFemale)
+
+// Humans ---------------------------------------------------------------------------------------------
 
 const humanNamesFemale = [
   'Aalis',
@@ -2187,6 +2320,8 @@ const humanNamesMale = [
 
 const humanNamesAll = humanNamesMale.concat(humanNamesFemale)
 
+// Tieflings ----------------------------------------------------------------------------------------
+
 const tieflingNamesFemale = [
   'Akta',
   'Anakis',
@@ -2347,6 +2482,8 @@ const tieflingVirtue = [
 ]
 
 const tieflingNamesAll = tieflingNamesMale.concat(tieflingNamesFemale)
+
+// Concat arrays for random buttons ---------------------------------------------------------------------
 
 const randomArr = [createDragonborn, createDwarf, createElf, createHuman, createTiefling]
 const randomArrMale = [createDragonbornMale, createDwarfMale, createElfMale, createHumanMale, createTieflingMale]

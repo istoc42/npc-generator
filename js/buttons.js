@@ -262,6 +262,83 @@ function createElfMale() {
 `
 }
 
+// Gnome buttons --------------------------------------------------------------------
+
+const newGnome = document.getElementById('new-gnome')
+const newGnomeMale = document.getElementById('new-gnome-male')
+const newGnomeFemale = document.getElementById('new-gnome-female')
+
+// Dwarves all
+newGnome.addEventListener('click', () => {
+  createGnome()
+})
+
+function createGnome() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let clan = shuffle(gnomeClan)
+  let gnomeName = shuffle(gnomeNamesAll)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name: ${gnomeName} ${clan}</h4>
+              <h4>Race: Gnome</h4>
+              <h4>Trait: ${trait}</h4>
+           </div>
+       `
+}
+
+// Gnome Male
+newGnomeMale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createGnomeMale()
+})
+
+function createGnomeMale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let clan = shuffle(gnomeClan)
+  let gnomeName = shuffle(gnomeNamesMale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name: ${gnomeName} ${clan}</h4>
+              <h4>Race: Gnome</h4>
+              <h4>Trait: ${trait}</h4>
+           </div>
+       `
+}
+
+// Gnome Female
+newGnomeFemale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createGnomeFemale()
+})
+
+function createGnomeFemale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let clan = shuffle(gnomeClan)
+  let gnomeName = shuffle(gnomeNamesFemale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name: ${gnomeName} ${clan}</h4>
+              <h4>Race: Gnome</h4>
+              <h4>Trait: ${trait}</h4>
+           </div>
+       `
+}
+
 // Humans -------------------------------------------------------------------------------
 
 const newHuman = document.getElementById('new-human')
