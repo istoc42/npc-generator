@@ -17,14 +17,14 @@
       <div class="button-container">
         <div class="npc-dropdown">
           <select name="race-select" id="race-select" class="race-select">
-            <option value="0">Random NPC</option>
-            <option value="1">Dwarves</option>
-            <option value="2">Dragonborn</option>
-            <option value="3">Human</option>
+            <option value="random">Random NPC</option>
+            <option value="dwarf">Dwarves</option>
+            <option value="dragonborn">Dragonborn</option>
+            <option value="human">Human</option>
           </select>
         </div>
 
-        <div class="race-btns active" id="random">
+        <div class="random race-btns active" id="random">
           <button class="btn-large new-npc-btn" id="new-npc-btn">Generate Random NPC</button>
           <div class="small-btns">
             <button class="btn new-npc-btn" id="new-npc-btn">Generate Random NPC (M)</button>
@@ -32,7 +32,7 @@
           </div>
         </div>
 
-        <div class="race-btns " id="dwarf-btns">
+        <div class="dwarf race-btns" id="dwarf-btns">
           <button class="btn-large new-dwarf" id="new-dwarf">Generate Random Dwarf</button>
 
           <div class="small-btns">
@@ -41,7 +41,7 @@
           </div>
         </div>
 
-        <div class="race-btns " id="dragonborn-btns">
+        <div class="dragonborn race-btns" id="dragonborn-btns">
           <button class="btn-large new-dragonborn" id="new-dragonborn">Generate Random Dragonborn</button>
 
           <div class="small-btns">
@@ -50,23 +50,14 @@
           </div>
         </div>
 
-        <div class="race-btns " id="human-btns">
+        <div class="human race-btns" id="human-btns">
             <button class="btn-large new-human" id="new-human">Generate Random Human</button>
     
             <div class="small-btns">
               <button class="btn new-human-male" id="new-human-male">Generate Random Human (M)</button>
               <button class="btn new-human-female" id="new-human-female">Generate Random Human (F)</button>
             </div>
-         </div>
-
-         <div class="race-btns active" id="tiefling-btns">
-          <button class="btn-large new-tiefling" id="new-tiefling">Generate Random Tiefling</button>
-  
-          <div class="small-btns">
-            <button class="btn new-tiefling-male" id="new-tiefling-male">Generate Random Tiefling (M)</button>
-            <button class="btn new-tiefling-female" id="new-tiefling-female">Generate Random Tiefling (F)</button>
           </div>
-       </div>
       </div>
 
       <div class="card-container" id="card-container">
