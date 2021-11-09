@@ -92,3 +92,7 @@ body {
 .card {
   border-radius: 10px;
 }
+
+span {
+  font-weight: 200;
+}

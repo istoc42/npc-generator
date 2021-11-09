@@ -43,9 +43,9 @@ function createDwarf() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${dwarfName} ${clan}</h4>
-              <h4>Race: Dwarf</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${dwarfName} ${clan}</span></h4>
+              <h4>Race:<span> Dwarf</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -67,9 +67,9 @@ function createDwarfMale() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${dwarfName} ${clan}</h4>
-              <h4>Race: Dwarf</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${dwarfName} ${clan}</span></h4>
+              <h4>Race:<span> Dwarf</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -91,9 +91,9 @@ function createDwarfFemale() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${dwarfName} ${clan}</h4>
-              <h4>Race: Dwarf</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${dwarfName} ${clan}</span></h4>
+              <h4>Race:<span> Dwarf</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -122,9 +122,9 @@ function createDragonborn() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${dragonbornName} ${clan}</h4>
-              <h4>Race: ${color} Dragonborn</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${dragonbornName} ${clan}</span></h4>
+              <h4>Race:<span> ${color} Dragonborn</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -148,9 +148,9 @@ function createDragonbornMale() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${dragonbornName} ${clan}</h4>
-              <h4>Race: ${color} Dragonborn</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${dragonbornName} ${clan}</span></h4>
+              <h4>Race:<span> ${color} Dragonborn</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -174,9 +174,9 @@ function createDragonbornFemale() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${dragonbornName} ${clan}</h4>
-              <h4>Race: ${color} Dragonborn</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${dragonbornName} ${clan}</span></h4>
+              <h4>Race:<span> ${color} Dragonborn</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -205,9 +205,9 @@ function createElf() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${firstName} ${lastName}</h4>
-              <h4>Race: Elf</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${firstName} ${lastName}</span></h4>
+              <h4>Race:<span> Elf</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -230,9 +230,9 @@ function createElfFemale() {
   //  Insert new card div
   cardContainer.innerHTML = `
   <div class="card">
-    <h4>Name: ${firstName} ${lastName}</h4>
-    <h4>Race: Elf</h4>
-    <h4>Trait: ${trait}</h4>
+    <h4>Name:<span> ${firstName} ${lastName}</span></h4>
+    <h4>Race:<span> Elf</span></h4>
+    <h4>Trait:<span> ${trait}</span></h4>
   </div>
 `
 }
@@ -255,9 +255,9 @@ function createElfMale() {
   //  Insert new card div
   cardContainer.innerHTML = `
   <div class="card">
-  <h4>Name: ${firstName} ${lastName}</h4>
-  <h4>Race: Elf</h4>
-  <h4>Trait: ${trait}</h4>
+  <h4>Name:<span> ${firstName} ${lastName}</span></h4>
+  <h4>Race:<span> Elf</span></h4>
+  <h4>Trait:<span> ${trait}</span></h4>
 </div>
 `
 }
@@ -268,7 +268,7 @@ const newGnome = document.getElementById('new-gnome')
 const newGnomeMale = document.getElementById('new-gnome-male')
 const newGnomeFemale = document.getElementById('new-gnome-female')
 
-// Dwarves all
+// Gnomes all
 newGnome.addEventListener('click', () => {
   createGnome()
 })
@@ -284,9 +284,9 @@ function createGnome() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${gnomeName} ${clan}</h4>
-              <h4>Race: Gnome</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${gnomeName} ${clan}</span></h4>
+              <h4>Race:<span> Gnome</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -308,9 +308,9 @@ function createGnomeMale() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${gnomeName} ${clan}</h4>
-              <h4>Race: Gnome</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${gnomeName} ${clan}</span></h4>
+              <h4>Race:<span> Gnome</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -332,9 +332,83 @@ function createGnomeFemale() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${gnomeName} ${clan}</h4>
-              <h4>Race: Gnome</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${gnomeName} ${clan}</span></h4>
+              <h4>Race:<span> Gnome</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
+           </div>
+       `
+}
+
+// Half-Orc buttons --------------------------------------------------------------------
+
+const newHalfOrc = document.getElementById('new-halforc')
+const newHalfOrcMale = document.getElementById('new-halforc-male')
+const newHalfOrcFemale = document.getElementById('new-halforc-female')
+
+// Half-Orc all
+newHalfOrc.addEventListener('click', () => {
+  createHalfOrc()
+})
+
+function createHalfOrc() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let halforcName = shuffle(halforcNamesAll)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name:<span> ${halforcName}</span></h4>
+              <h4>Race:<span> Half-Orc</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
+           </div>
+       `
+}
+
+// Half-Orc Male
+newHalfOrcMale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createHalfOrcMale()
+})
+
+function createHalfOrcMale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let halforcName = shuffle(halforcNamesMale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name:<span> ${halforcName}</span></h4>
+              <h4>Race:<span> Half-Orc</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
+           </div>
+       `
+}
+
+// Half-Orc Female
+newHalfOrcFemale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createHalfOrcFemale()
+})
+
+function createHalfOrcFemale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let halforcName = shuffle(halforcNamesFemale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name:<span> ${halforcName}</span> </h4>
+              <h4>Race:<span> Half-Orc</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -363,9 +437,9 @@ function createHuman() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${firstName} ${lastName}</h4>
-              <h4>Race: Human</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${firstName} ${lastName}</span></h4>
+              <h4>Race:<span> Human</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -388,9 +462,9 @@ function createHumanFemale() {
   //  Insert new card div
   cardContainer.innerHTML = `
   <div class="card">
-    <h4>Name: ${firstName} ${lastName}</h4>
-    <h4>Race: Human</h4>
-    <h4>Trait: ${trait}</h4>
+    <h4>Name:<span> ${firstName} ${lastName}</span></h4>
+    <h4>Race:<span> Human</span></h4>
+    <h4>Trait:<span> ${trait}</span></h4>
   </div>
 `
 }
@@ -413,9 +487,9 @@ function createHumanMale() {
   //  Insert new card div
   cardContainer.innerHTML = `
   <div class="card">
-  <h4>Name: ${firstName} ${lastName}</h4>
-  <h4>Race: Human</h4>
-  <h4>Trait: ${trait}</h4>
+  <h4>Name:<span> ${firstName} ${lastName}</span></h4>
+  <h4>Race:<span> Human</span></h4>
+  <h4>Trait:<span> ${trait}</span></h4>
 </div>
 `
 }
@@ -444,9 +518,9 @@ function createTiefling() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${tieflingName} ${virtue}</h4>
-              <h4>Race: Tiefling</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${tieflingName} ${virtue}</span></h4>
+              <h4>Race:<span> Tiefling</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -469,9 +543,9 @@ function createTieflingFemale() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${tieflingName} ${virtue}</h4>
-              <h4>Race: Tiefling</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${tieflingName} ${virtue}</span></h4>
+              <h4>Race:<span> Tiefling</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }
@@ -494,9 +568,9 @@ function createTieflingMale() {
   //  Insert new card div
   cardContainer.innerHTML = `
            <div class="card">
-              <h4>Name: ${tieflingName} ${virtue}</h4>
-              <h4>Race: Tiefling</h4>
-              <h4>Trait: ${trait}</h4>
+              <h4>Name:<span> ${tieflingName} ${virtue}</span></h4>
+              <h4>Race:<span> Tiefling</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
            </div>
        `
 }

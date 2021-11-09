@@ -710,6 +710,14 @@ const gnomeClan = [
 
 const gnomeNamesAll = gnomeNamesMale.concat(gnomeNamesFemale)
 
+// Half-orcs ---------------------------------------------------------------------------------------------
+
+const halforcNamesMale = ['Argran', 'Braak', 'Brug', 'Cagak', 'Dench', 'Dorn', 'Dren', 'Druuk', 'Feng', 'Gell', 'Gnarsh', 'Grumbar', 'Gubrash', 'Hagren', 'Henk', 'Hogar', 'Holg', 'Imsh', 'Karash', 'Karg', 'Keth', 'Korag', 'Krusk', 'Lubash', 'Megged', 'Mhurren', 'Mord', 'Morg', 'Nil', 'Nybarg', 'Odorr', 'Ohr', 'Rendar', 'Resh', 'Ront', 'Rrath', 'Sark', 'Scrag', 'Sheggen', 'Shump', 'Tanglar', 'Tarak', 'Thar', 'Thokk', 'Trag', 'Ugarth', 'Varg', 'Vilberg', 'Yurk', 'Zed']
+
+const halforcNamesFemale = ['Arha', 'Baggi', 'Bendoo', 'Bilga', 'Brakka', 'Creega', 'Drenna', 'Ekk', 'Emen', 'Engong', 'Fistula', 'Gaaki', 'Gorga', 'Grai', 'Greeba', 'Grigi', 'Gynk', 'Hrathy', 'Huru', 'Ilga', 'Kabbarg', 'Kansif', 'Lagazi', 'Lezre', 'Murgen', 'Murook', 'Myev', 'Nagrette', 'Neega', 'Nella', 'Nogu', 'Oolah', 'Ootah', 'Ovak', 'Ownka', 'Puyet', 'Reeza', 'Shautha', 'Silgre', 'Sutha', 'Tagga', 'Tawar', 'Tomph', 'Ubada', 'Vanchu', 'Vola', 'Volen', 'Vorka', 'Yevelda', 'Zagga']
+
+const halforcNamesAll = halforcNamesMale.concat(halforcNamesFemale)
+
 // Humans ---------------------------------------------------------------------------------------------
 
 const humanNamesFemale = [
@@ -2485,6 +2493,6 @@ const tieflingNamesAll = tieflingNamesMale.concat(tieflingNamesFemale)
 
 // Concat arrays for random buttons ---------------------------------------------------------------------
 
-const randomArr = [createDragonborn, createDwarf, createElf, createHuman, createTiefling]
-const randomArrMale = [createDragonbornMale, createDwarfMale, createElfMale, createHumanMale, createTieflingMale]
-const randomArrFemale = [createDragonbornFemale, createDwarfFemale, createElfFemale, createHumanFemale, createTieflingFemale]
+const randomArr = [createDragonborn, createDwarf, createElf, createHalfOrc, createHuman, createTiefling]
+const randomArrMale = [createDragonbornMale, createDwarfMale, createElfMale, createHalfOrcMale, createHumanMale, createTieflingMale]
+const randomArrFemale = [createDragonbornFemale, createDwarfFemale, createElfFemale, createHalfOrcFemale, createHumanFemale, createTieflingFemale]
