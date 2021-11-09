@@ -1,39 +1,25 @@
 // Bring in elements from DOM
-const randomNpcBtn = document.getElementById('new-npc-btn')
+const randomNpc = document.getElementById('new-npc-btn')
+const randomNpcMale = document.getElementById('new-npc-btn-male')
+const randomNpcFemale = document.getElementById('new-npc-btn-female')
 const cardContainer = document.getElementById('card-container')
 
-// When button is clicked, generate a card with three random values
-randomNpcBtn.addEventListener('click', () => {
-  console.log('Button clicked')
-  createRandomNpc()
+// Random buttons -----------------------------------------------------------------------
+
+randomNpc.addEventListener('click', () => {
+  let r = Math.floor(Math.random() * randomArr.length)
+  randomArr[r]()
 })
 
-randomNpcBtn.addEventListener('click', () => {
-  console.log('Button clicked')
-  createRandomNpc()
+randomNpcMale.addEventListener('click', () => {
+  let r = Math.floor(Math.random() * randomArr.length)
+  randomArrMale[r]()
 })
 
-// Function to create card
-function createRandomNpc() {
-  // Generate random numbers
-  console.log(shuffle(npcTraits))
-
-  // Clear card container div
-  cardContainer.innerHTML = ''
-
-  let npc = shuffle(npcs)
-
-  let trait = shuffle(npcTraits)
-
-  //  Insert new card div
-  cardContainer.innerHTML = `
-           <div class="card">
-               <h4>Name: ${npc.firstname} ${npc.secondname}</h4>
-              <h4>Race: ${npc.race}</h4>
-              <h4>Trait: ${trait}</h4>
-           </div>
-       `
-}
+randomNpcFemale.addEventListener('click', () => {
+  let r = Math.floor(Math.random() * randomArr.length)
+  randomArrFemale[r]()
+})
 
 // Dwarf buttons --------------------------------------------------------------------
 
@@ -43,7 +29,6 @@ const newDwarfFemale = document.getElementById('new-dwarf-female')
 
 // Dwarves all
 newDwarf.addEventListener('click', () => {
-  console.log('Button clicked')
   createDwarf()
 })
 

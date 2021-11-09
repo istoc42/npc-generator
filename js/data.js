@@ -2347,3 +2347,7 @@ const tieflingVirtue = [
 ]
 
 const tieflingNamesAll = tieflingNamesMale.concat(tieflingNamesFemale)
+
+const randomArr = [createDragonborn, createDwarf, createElf, createHuman, createTiefling]
+const randomArrMale = [createDragonbornMale, createDwarfMale, createElfMale, createHumanMale, createTieflingMale]
+const randomArrFemale = [createDragonbornFemale, createDwarfFemale, createElfFemale, createHumanFemale, createTieflingFemale]
