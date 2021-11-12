@@ -21,6 +21,87 @@ randomNpcFemale.addEventListener('click', () => {
   randomArrFemale[r]()
 })
 
+// Barovian ------------------------------------------------------------------------BarBarovian--
+
+const newBarovian = document.getElementById('new-barovian')
+const newBarovianMale = document.getElementById('new-barovian-male')
+const newBarovianFemale = document.getElementById('new-barovian-female')
+
+// Barovian all
+
+newBarovian.addEventListener('click', () => {
+  console.log('Button clicked')
+  createBarovian()
+})
+
+function createBarovian() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let lastName = shuffle(barovianNamesAll)
+  let firstName = shuffle(barovianNamesAll)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+           <div class="card">
+              <h4>Name:<span> ${firstName} ${lastName}</span></h4>
+              <h4>Race:<span> Barovian</span></h4>
+              <h4>Trait:<span> ${trait}</span></h4>
+           </div>
+       `
+}
+
+// Barovian Female
+
+newBarovianFemale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createBarovianFemale()
+})
+
+function createBarovianFemale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let lastName = shuffle(barovianNamesAll)
+  let firstName = shuffle(barovianNamesFemale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+  <div class="card">
+    <h4>Name:<span> ${firstName} ${lastName}</span></h4>
+    <h4>Race:<span> Barovian</span></h4>
+    <h4>Trait:<span> ${trait}</span></h4>
+  </div>
+`
+}
+
+// Barovian Male
+
+newBarovianMale.addEventListener('click', () => {
+  console.log('Button clicked')
+  createBarovianMale()
+})
+
+function createBarovianMale() {
+  // Clear card container div
+  cardContainer.innerHTML = ''
+
+  let lastName = shuffle(barovianNamesAll)
+  let firstName = shuffle(barovianNamesMale)
+  let trait = shuffle(npcTraits)
+
+  //  Insert new card div
+  cardContainer.innerHTML = `
+  <div class="card">
+  <h4>Name:<span> ${firstName} ${lastName}</span></h4>
+  <h4>Race:<span> Barovian</span></h4>
+  <h4>Trait:<span> ${trait}</span></h4>
+</div>
+`
+}
+
 // Dwarf buttons --------------------------------------------------------------------
 
 const newDwarf = document.getElementById('new-dwarf')
