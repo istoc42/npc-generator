@@ -96,3 +96,10 @@ body {
 span {
   font-weight: 200;
 }
+
+footer {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
