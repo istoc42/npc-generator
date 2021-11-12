@@ -131,3 +131,29 @@ footer {
   border-radius: 10px;
   font-weight: bold;
 }
+
+@media (max-width: 800px) {
+  html {
+    background: url('https://wallpaperaccess.com/full/1868703.jpg') no-repeat center center;
+  }
+  
+  body {
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex-direction: column;
+    width:auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-container {
+    padding-bottom: 2rem;
+  }
+
+  .card-container {
+    width: 350px;
+  }
+
+}
