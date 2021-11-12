@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 
+html {
+  background: url('https://wallpaperaccess.com/full/1868703.jpg') no-repeat right top;
+}
+
 body {
+  background-color: rgba(0, 0, 0, 0.5);
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
@@ -12,9 +17,15 @@ body {
   align-items: center;
 }
 
+.title {
+  color: #fff;
+}
+
 .container {
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
+  width: 800px;
 }
 
 .drop-btn {
@@ -69,7 +80,7 @@ body {
 }
 
 .race-btns {
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   display: none;
 }
 
@@ -83,14 +94,17 @@ body {
 
 .card-container {
   border: 1px solid black;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.5);
   width: 350px;
 }
 
 .card {
   border-radius: 10px;
+  display: inline-block;
+  text-align: center;
 }
 
 span {
@@ -98,8 +112,9 @@ span {
 }
 
 footer {
-  padding-top: 2rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+  color: #fff;
 }
